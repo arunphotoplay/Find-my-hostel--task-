@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.form-container {
+  width: 360px;
+  height: 450px;
+  border-radius: 4px;
+  background: #ffffff;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 5px;
+  box-shadow: 0px 23px 27px -15px #8686863b;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form-container form {
+  margin-top: 61px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+input {
+  height: 47px;
+  width: 324px;
+  border-radius: 5px;
+  border: 1px solid #000000a6;
+}
+
+input::placeholder {
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #12121278;
+}
+
+.forgot-container {
+  display: flex;
+  margin-bottom: 22px;
+  justify-content: flex-end;
+}
+
+.create-account {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.create-account p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.button-container {
+  margin-bottom: 36px;
+}
+
+.button-container button {
+  height: 47px;
+  width: 324px;
+  border-radius: 5px;
+  border: none;
+  background: #121212;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #002fff;
+  color: #ffffff;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #f6f6f6;
+
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background span {
+  width: 19vmin;
+  height: 19vmin;
+  border-radius: 19vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #583c87;
+  top: 21%;
+  left: 86%;
+  animation-duration: 28s;
+  animation-delay: -25s;
+  transform-origin: 1vw 16vh;
+  box-shadow: 38vmin 0 5.071783900558671vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #583c87;
+  top: 57%;
+  left: 70%;
+  animation-duration: 48s;
+  animation-delay: -14s;
+  transform-origin: 8vw 17vh;
+  box-shadow: 38vmin 0 5.6387804238704975vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #ffacac;
+  top: 44%;
+  left: 62%;
+  animation-duration: 38s;
+  animation-delay: -50s;
+  transform-origin: -5vw -9vh;
+  box-shadow: 38vmin 0 4.811144855445255vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #e45a84;
+  top: 72%;
+  left: 74%;
+  animation-duration: 11s;
+  animation-delay: -3s;
+  transform-origin: -18vw -19vh;
+  box-shadow: 38vmin 0 5.2856430459252035vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #ffacac;
+  top: 60%;
+  left: 1%;
+  animation-duration: 13s;
+  animation-delay: -38s;
+  transform-origin: -10vw 2vh;
+  box-shadow: -38vmin 0 4.888096557654213vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #583c87;
+  top: 13%;
+  left: 60%;
+  animation-duration: 52s;
+  animation-delay: -30s;
+  transform-origin: -24vw 5vh;
+  box-shadow: 38vmin 0 5.142606848082738vmin currentColor;
+}
